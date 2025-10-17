@@ -15,3 +15,5 @@ In this end, I was hoping to use mutual information theory as a part of analysis
 In order to perform the analysis, one needs to identify homologs of your protein of interest across 100's-1000's of genomes. 
 
 If you want to perform MIT on a single protein, this is good enough. If you want to test coevolution across proteins you need to make sure that the MSA's are ordered by genome. If there are multiple copies of a single gene you can either repeat the single copy gene or remove the genome from the analysis. I would lean towards removal only because with multiple copies it can allow one homolog to be non-functional. If you want to be more thorough, you can use gene synteny to determine the true functional gene. 
+
+When graphing the data, one normally uses a heatmap to pull the data together. If you want to make the graph meaningful, you should renumber the sequence based on a well known reference sequence. This makes interpretation of the graph much easier - especially if you can use Alphafold to predict the conformational shape of the protein or even better conformational data based on crystallography. 
